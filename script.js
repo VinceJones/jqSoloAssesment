@@ -1,4 +1,5 @@
 var i = 0;
+var j = 0;
 
 $(document).ready(function(){
 
@@ -19,10 +20,15 @@ $(document).ready(function(){
 		
 		// Change Color
 		$(".colorChange").on('click', function(){
-			$('p').css(
-				"background-color", "yellow",
-				"text-align", "center"
-				);
+			j++;
+			if (j == 1) {
+				$('p').css({"background-color": "yellow",
+							"font-size": "45px"});
+			} else {
+				$('p').css({"background-color": "white",
+							"font-size": "16px"});
+				j = 0;
+			}
 		});
 
 		// Remove Button
