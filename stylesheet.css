@@ -1,0 +1,14 @@
+
+.container {
+	margin: 10px 40% 10px 40%;
+}
+
+p, h1{
+	text-align: center;
+/*	width: 100px;*/
+}
+
+button {
+	display: block;
+	margin: 10px auto 10px auto;
+}
